@@ -1,0 +1,21 @@
+SITE PERSONALIZADO — ASSEMBLEIA DE DEUS TORRE FORTE
+Inclui logo enviado, foto das pastoras e programação de cultos.
+
+Arquivos:
+- index.html
+- assets/logo-torre-forte.png
+- assets/pastoras-aurilene-eliane.jpg
+- assets/programacao-cultos.jpg (cartaz original enviado)
+
+Para publicar:
+1. Extraia este ZIP.
+2. Acesse https://www.netlify.com/ e crie uma conta gratuita.
+3. Use a opção de deploy manual e envie a pasta site_torre_forte_final inteira, mantendo a pasta assets.
+4. O Netlify gera um endereço público terminado em netlify.app.
+
+O site mostra no momento os cultos do cartaz enviado:
+Segunda-feira — Oração — 18h30
+Terça-feira — Campanha — 18h30
+Quinta-feira — Doutrina — 18h30
+Domingo — Culto — 18h30
+Confirme a programação antes de divulgar. O mapa abre uma busca do endereço, então confira o ponto no Google Maps.
