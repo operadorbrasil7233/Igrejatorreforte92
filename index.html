@@ -18,35 +18,137 @@ section{padding:70px 0}.heading{text-align:center;max-width:720px;margin:0 auto 
 .contact{display:grid;grid-template-columns:1fr 1fr;gap:24px}.panel{background:#f1f6ff;padding:28px;border-radius:14px}.panel h3{color:var(--blue);margin-top:0}.line{margin:15px 0;color:var(--muted)}.line strong{display:block;color:var(--ink)}.map{border-radius:14px;min-height:280px;background:linear-gradient(145deg,#e7f0ff,#d3e3fa);display:grid;place-items:center;text-align:center;padding:24px}.map a{color:var(--blue);font-weight:bold}footer{background:#061735;color:#dce9ff;padding:28px 0}footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}footer small{color:#a9c0e2}.note{font-size:.85rem;color:#586b87;margin-top:14px}
 @media(max-width:850px){.menu{display:block}nav{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;padding:20px 4%;box-shadow:0 10px 18px #0002;flex-direction:column;align-items:flex-start}nav.open{display:flex}.hero-grid,.about,.contact{grid-template-columns:1fr}.hero-logo{width:200px;grid-row:1}.hero{padding:52px 0}.cards,.schedule{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:520px){.cards,.schedule{grid-template-columns:1fr}.brand img{width:50px;height:50px}.brand{font-size:.9rem}}
+
+.countdown{margin:28px auto 0;max-width:760px;padding:26px 22px;text-align:center;color:#fff;background:linear-gradient(135deg,#061d49,#124c9a);border:1px solid #e4bd61;border-radius:16px;box-shadow:0 12px 30px #092c6920}
+.countdown .count-label{color:#e4bd61;font-size:.78rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
+.countdown h3{margin:7px 0 4px;font-size:clamp(1.3rem,3vw,1.8rem)}
+.countdown p{margin:0;color:#e1ebfb}
+.countdown-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:18px}
+.count-unit{padding:13px 6px;background:#ffffff12;border:1px solid #ffffff24;border-radius:10px}
+.count-unit strong{display:block;color:#fff;font-size:clamp(1.5rem,4vw,2.25rem);line-height:1.2;font-variant-numeric:tabular-nums}
+.count-unit span{color:#e4bd61;font-size:.76rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em}
+@media(max-width:420px){.countdown{padding:20px 12px}.countdown-grid{gap:6px}.count-unit{padding:11px 2px}.count-unit span{font-size:.65rem}}
+
+
+.give-section{background:linear-gradient(135deg,#061d49,#124c9a);color:#fff}
+.give-card{max-width:820px;margin:auto;background:#fff;color:#172b4d;border:2px solid #e4bd61;border-radius:18px;padding:clamp(22px,4vw,38px);box-shadow:0 18px 45px #0002;text-align:center}
+.give-card h3{color:#092c69;font-size:1.6rem;margin:8px 0}
+.give-card .pix-key{font-size:clamp(1rem,3vw,1.25rem);font-weight:900;letter-spacing:.04em;overflow-wrap:anywhere;background:#f1f6ff;padding:14px;border-radius:10px;margin:16px 0}
+.give-card .give-note{color:#5d6c82}
+.give-card .copy-btn{cursor:pointer;border:0;font:inherit}
+.social-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:22px}
+.social-actions a{display:inline-block;text-decoration:none;font-weight:800;padding:13px 18px;border-radius:9px}
+
 </style>
 </head>
 <body>
 <div class="top"><div class="wrap"><span>Uma família de fé, esperança e amor</span><span>Pacajus — Ceará</span></div></div>
 <header><div class="wrap nav">
-<a class="brand" href="#inicio"><img src="logo-torre-forte.png" alt="Logo Assembleia de Deus Torre Forte"><span>ASSEMBLEIA DE DEUS<small>TORRE FORTE</small></span></a>
+<a class="brand" href="#inicio"><img src="assets/logo-torre-forte.png" alt="Logo Assembleia de Deus Torre Forte"><span>ASSEMBLEIA DE DEUS<small>TORRE FORTE</small></span></a>
 <button class="menu" id="menuBtn" aria-expanded="false">☰ Menu</button>
-<nav id="nav"><a href="#inicio">Início</a><a href="#igreja">Nossa igreja</a><a href="#lideranca">Liderança</a><a href="#cultos">Cultos</a><a href="#contato">Contato</a></nav>
+<nav id="nav"><a href="#inicio">Início</a><a href="#igreja">Nossa igreja</a><a href="#lideranca">Liderança</a><a href="#cultos">Cultos</a><a href="#ofertas">Dízimos e ofertas</a><a href="#contato">Contato</a></nav>
 </div></header>
 <main>
-<section class="hero" id="inicio"><div class="wrap hero-grid"><div><div class="eyebrow">Seja bem-vindo(a)</div><h1>Um lugar para fortalecer sua fé e sua família.</h1><p>A Igreja Evangélica Assembleia de Deus Torre Forte recebe você com alegria para momentos de louvor, oração, aprendizado da Palavra e comunhão cristã.</p><div class="buttons"><a class="btn goldbtn" href="#cultos">Confira os cultos</a><a class="btn lightbtn" href="https://wa.me/5585988099844" target="_blank" rel="noopener">Fale pelo WhatsApp</a></div></div><img class="hero-logo" src="logo-torre-forte.png" alt="Emblema da Assembleia de Deus Torre Forte"></div></section>
+<section class="hero" id="inicio"><div class="wrap hero-grid"><div><div class="eyebrow">Seja bem-vindo(a)</div><h1>Um lugar para fortalecer sua fé e sua família.</h1><p>A Igreja Evangélica Assembleia de Deus Torre Forte recebe você com alegria para momentos de louvor, oração, aprendizado da Palavra e comunhão cristã.</p><div class="buttons"><a class="btn goldbtn" href="#cultos">Confira os cultos</a><a class="btn lightbtn" href="https://wa.me/5585988099844" target="_blank" rel="noopener">Fale pelo WhatsApp</a>
+<a class="btn goldbtn" href="https://operadorbrasil7233.github.io/Igreja-radio00/" target="_blank" rel="noopener">📻 Rádio Igreja</a>
+<a class="btn lightbtn" href="https://www.facebook.com/share/151RLyVHVjf/" target="_blank" rel="noopener">f Facebook</a></div></div><img class="hero-logo" src="assets/logo-torre-forte.png" alt="Emblema da Assembleia de Deus Torre Forte"></div></section>
 <section id="igreja"><div class="wrap about"><div><div class="eyebrow">Nossa igreja</div><h2>Uma igreja de portas abertas para você.</h2><p>Somos uma comunidade cristã dedicada a anunciar a Palavra de Deus, cultivar a comunhão e servir às pessoas com amor.</p><p>Venha participar de um culto e conhecer nossa comunidade. Você e sua família são bem-vindos!</p><a class="btn bluebtn" href="#contato">Planeje sua visita</a></div><img class="pastors" src="assets/pastoras-aurilene-eliane.jpg" alt="Pastoras presidentes Pra. Aurilene e Eliane Galvão"></div></section>
-<section class="pale" id="lideranca"><div class="wrap"><div class="heading"><div class="eyebrow">Liderança da igreja</div><h2>Pastoras presidentes</h2><p>Com carinho e dedicação no trabalho cristão.</p></div><div class="about"><img class="pastors" src="pastoras-aurilene-eliane.jpg" alt="Pra. Aurilene e Eliane Galvão"><div><h2>Pra. Aurilene e Eliane Galvão</h2><p>Seja bem-vindo à Assembleia de Deus Torre Forte. Estamos felizes em receber você e sua família em nossa igreja.</p><p class="note"></p></div></div></div></section>
+<section class="pale" id="lideranca"><div class="wrap"><div class="heading"><div class="eyebrow">Liderança da igreja</div><h2>Pastoras presidentes</h2><p>Com carinho e dedicação no trabalho cristão.</p></div><div class="about"><img class="pastors" src="assets/pastoras-aurilene-eliane.jpg" alt="Pra. Aurilene e Eliane Galvão"><div><h2>Pra. Aurilene e Eliane Galvão</h2><p>Seja bem-vindo à Assembleia de Deus Torre Forte. Estamos felizes em receber você e sua família em nossa igreja.</p><p class="note">Os nomes e cargos foram inseridos conforme as informações fornecidas. Confira a grafia e os cargos antes de divulgar.</p></div></div></div></section>
 <section id="cultos"><div class="wrap"><div class="heading"><div class="eyebrow">Participe conosco</div><h2>Dias e horários dos cultos</h2><p>Esperamos você para momentos de louvor, oração e comunhão.</p></div>
 <div class="schedule">
 <div class="day"><strong>Segunda-feira</strong><span>Oração</span><span class="time">18h30</span></div>
 <div class="day"><strong>Terça-feira</strong><span>Campanha</span><span class="time">18h30</span></div>
 <div class="day"><strong>Quinta-feira</strong><span>Doutrina</span><span class="time">18h30</span></div>
 <div class="day"><strong>Domingo</strong><span>Culto</span><span class="time">18h30</span></div>
-</div><p class="note">Programação transcrita do cartaz enviado. Confirme se todos os dias continuam válidos.</p></div></section>
+</div>
+<div class="countdown" aria-live="polite">
+  <div class="count-label">Contagem regressiva</div>
+  <h3 id="countTitle">Falta pouco para o próximo culto!</h3>
+  <p id="countSubtitle">Prepare seu coração para esse momento especial.</p>
+  <div class="countdown-grid">
+    <div class="count-unit"><strong id="countDays">00</strong><span>Dias</span></div>
+    <div class="count-unit"><strong id="countHours">00</strong><span>Horas</span></div>
+    <div class="count-unit"><strong id="countMinutes">00</strong><span>Minutos</span></div>
+    <div class="count-unit"><strong id="countSeconds">00</strong><span>Segundos</span></div>
+  </div>
+</div>
+<p class="note">Programação transcrita do cartaz enviado. Confirme se todos os dias continuam válidos.</p></div></section>
 <section class="pale"><div class="wrap"><div class="heading"><div class="eyebrow">Nossa missão</div><h2>Fé que acolhe. Amor que transforma.</h2><p>Um espaço para adorar a Deus, aprender a Palavra e viver a comunhão cristã.</p></div><div class="cards">
 <div class="card"><div class="symbol">✝</div><h3>Palavra de Deus</h3><p>Ensinamento bíblico para fortalecer a fé.</p></div><div class="card"><div class="symbol">♡</div><h3>Comunhão</h3><p>Uma comunidade para acolher e apoiar.</p></div><div class="card"><div class="symbol">🙏</div><h3>Oração</h3><p>Momentos de oração e esperança.</p></div><div class="card"><div class="symbol">📖</div><h3>Doutrina</h3><p>Aprendizado e crescimento espiritual.</p></div>
 </div></div></section>
 <div class="verse"><blockquote>“Deus é o nosso refúgio e fortaleza, socorro bem presente na angústia.”</blockquote><small>Salmos 46:1</small></div>
+
+<section class="give-section" id="ofertas">
+  <div class="wrap">
+    <div class="heading">
+      <div class="eyebrow">Dízimos e ofertas</div>
+      <h2 style="color:#fff">Abençoe a obra de Deus</h2>
+      <p style="color:#e1ebfb">Sua contribuição fortalece a obra de Deus. Contribua com alegria e segundo o propósito do seu coração.</p>
+    </div>
+    <div class="give-card">
+      <div style="font-size:2.5rem" aria-hidden="true">♡</div>
+      <h3>Dízimos e ofertas via Pix</h3>
+      <p class="give-note">Igreja Assembleia de Deus Torre Forte</p>
+      <p><strong>Chave Pix (CNPJ)</strong></p>
+      <div class="pix-key" id="pixKey">58031641000193</div>
+      <button class="btn bluebtn copy-btn" id="copyPix" type="button">Copiar chave Pix</button>
+      <p class="give-note" id="copyPixStatus" aria-live="polite">Confira os dados da igreja no aplicativo do seu banco antes de confirmar o Pix.</p>
+      <hr style="border:0;border-top:1px solid #dce6f5;margin:24px 0">
+      <p><em>“Deus ama ao que dá com alegria.” — 2 Coríntios 9:7</em></p>
+    </div>
+  </div>
+</section>
+
 <section id="contato"><div class="wrap"><div class="heading"><div class="eyebrow">Estamos esperando por você</div><h2>Venha nos visitar</h2><p>Será uma alegria receber você e sua família.</p></div><div class="contact">
 <div class="panel"><h3>Informações da igreja</h3><div class="line"><strong>Endereço</strong>Rua Luiz Mendes Xavier, nº 646<br>Pacajus — Ceará</div><div class="line"><strong>WhatsApp</strong>(85) 98809-9844</div><div class="line"><strong>Programação</strong>Segunda, terça, quinta e domingo, às 18h30</div><a class="btn bluebtn" href="https://wa.me/5585988099844" target="_blank" rel="noopener">Conversar pelo WhatsApp</a></div>
 <div class="map"><div><div style="font-size:2.5rem">⌖</div><strong>Como chegar</strong><p>Abra o mapa para consultar o endereço.</p><a href="https://www.google.com/maps/search/?api=1&query=Rua+Luiz+Mendes+Xavier%2C+646%2C+Pacajus%2C+Cear%C3%A1" target="_blank" rel="noopener">Abrir no Google Maps</a></div></div>
 </div></div></section>
 </main>
-<footer><div class="wrap"><div><strong>Igreja Evangélica Assembleia de Deus Torre Forte</strong><br><small>Rua Luiz Mendes Xavier, nº 646 — Pacajus/CE</small></div><small>© <span id="year"></span> — Todos os direitos reservados.</small></div></footer>
-<script>const b=document.getElementById('menuBtn'),n=document.getElementById('nav');b.addEventListener('click',()=>{let o=n.classList.toggle('open');b.setAttribute('aria-expanded',String(o))});n.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{n.classList.remove('open');b.setAttribute('aria-expanded','false')}));document.getElementById('year').textContent=new Date().getFullYear();</script>
+<footer><div class="wrap"><div class="social-actions" style="width:100%;margin:0 0 14px">
+<a href="https://operadorbrasil7233.github.io/Igreja-radio00/" target="_blank" rel="noopener" style="background:#e4bd61;color:#09244f">📻 Rádio Igreja</a>
+<a href="https://www.facebook.com/share/151RLyVHVjf/" target="_blank" rel="noopener" style="background:#124c9a;color:#fff">f Facebook</a>
+</div><div><strong>Igreja Evangélica Assembleia de Deus Torre Forte</strong><br><small>Rua Luiz Mendes Xavier, nº 646 — Pacajus/CE</small></div><small>© <span id="year"></span> — Todos os direitos reservados.</small></div></footer>
+<script>const b=document.getElementById('menuBtn'),n=document.getElementById('nav');b.addEventListener('click',()=>{let o=n.classList.toggle('open');b.setAttribute('aria-expanded',String(o))});n.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{n.classList.remove('open');b.setAttribute('aria-expanded','false')}));document.getElementById('year').textContent=new Date().getFullYear();
+const cultoDias=[
+  {dia:1,nome:'Culto de oração'},
+  {dia:2,nome:'Culto de campanha'},
+  {dia:4,nome:'Culto de doutrina'},
+  {dia:0,nome:'Culto de domingo'}
+];
+function atualizarContagem(){
+  const agora=new Date();
+  let proximo=null;
+  for(let i=0;i<8;i++){
+    const data=new Date(agora);
+    data.setDate(agora.getDate()+i);
+    data.setHours(18,30,0,0);
+    const culto=cultoDias.find(c=>c.dia===data.getDay());
+    if(culto && data>agora){proximo={data,nome:culto.nome};break;}
+  }
+  if(!proximo)return;
+  const restante=Math.max(0,proximo.data-agora);
+  const total=Math.floor(restante/1000);
+  const dias=Math.floor(total/86400);
+  const horas=Math.floor((total%86400)/3600);
+  const minutos=Math.floor((total%3600)/60);
+  const segundos=total%60;
+  document.getElementById('countDays').textContent=String(dias).padStart(2,'0');
+  document.getElementById('countHours').textContent=String(horas).padStart(2,'0');
+  document.getElementById('countMinutes').textContent=String(minutos).padStart(2,'0');
+  document.getElementById('countSeconds').textContent=String(segundos).padStart(2,'0');
+  document.getElementById('countTitle').textContent='Falta pouco para o próximo culto!';
+  document.getElementById('countSubtitle').textContent=proximo.nome+' • '+proximo.data.toLocaleDateString('pt-BR',{weekday:'long',day:'2-digit',month:'long'})+' às 18h30';
+}
+atualizarContagem();setInterval(atualizarContagem,1000);
+document.getElementById('copyPix').addEventListener('click',async()=>{
+  const key=document.getElementById('pixKey').textContent.trim();
+  const status=document.getElementById('copyPixStatus');
+  try{
+    await navigator.clipboard.writeText(key);
+    status.textContent='Chave Pix copiada! Confira o destinatário no aplicativo do banco.';
+  }catch(e){
+    status.textContent='Selecione e copie a chave Pix: '+key;
+  }
+});
+</script>
 </body></html>
