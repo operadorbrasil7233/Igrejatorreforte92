@@ -39,19 +39,57 @@ section{padding:70px 0}.heading{text-align:center;max-width:720px;margin:0 auto 
 .social-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:22px}
 .social-actions a{display:inline-block;text-decoration:none;font-weight:800;padding:13px 18px;border-radius:9px}
 
+
+/* Página inicial com foto da fachada — sem emblema grande */
+.brand{min-height:54px}
+.brand span{font-size:1rem;letter-spacing:.035em}
+.brand small{font-size:.76rem;letter-spacing:.2em;color:#1455a0}
+.hero-photo{
+  isolation:isolate;
+  background-image:
+    linear-gradient(90deg,rgba(4,20,49,.88) 0%,rgba(5,31,72,.75) 52%,rgba(5,31,72,.42) 100%),
+    url("assets/fachada-igreja.jpg");
+  background-size:cover;
+  background-position:center 38%;
+}
+.hero-photo:after{content:none}
+.hero-photo .hero-grid{grid-template-columns:minmax(0,1fr);position:relative;z-index:1}
+.hero-photo .hero-grid>div{max-width:760px}
+.hero-photo .hero-grid>img{display:none}
+.hero-photo h1{max-width:760px;text-shadow:0 2px 18px #0005}
+.hero-photo p{max-width:650px;text-shadow:0 1px 8px #0005}
+.hero-photo .eyebrow{color:#f5d27b}
+.hero-photo .buttons{max-width:660px}
+@media(max-width:850px){
+  .hero-photo{background-position:center 35%;padding:48px 0}
+  .hero-photo .hero-grid{grid-template-columns:1fr}
+  .hero-photo .hero-grid>div{max-width:100%}
+}
+@media(max-width:520px){
+  .brand span{font-size:.83rem}
+  .brand small{font-size:.67rem}
+  .hero-photo{
+    padding:38px 0 40px;
+    background-image:
+      linear-gradient(180deg,rgba(4,20,49,.78),rgba(5,31,72,.83)),
+      url("assets/fachada-igreja.jpg");
+    background-position:center 35%;
+  }
+}
+
 </style>
 </head>
 <body>
 <div class="top"><div class="wrap"><span>Uma família de fé, esperança e amor</span><span>Pacajus — Ceará</span></div></div>
 <header><div class="wrap nav">
-<a class="brand" href="#inicio"><img src="logo-torre-forte.png" alt="Logo Assembleia de Deus Torre Forte"><span>ASSEMBLEIA DE DEUS<small>TORRE FORTE</small></span></a>
+<a class="brand" href="#inicio" aria-label="Assembleia de Deus Torre Forte"><span>ASSEMBLEIA DE DEUS<small>TORRE FORTE</small></span></a>
 <button class="menu" id="menuBtn" aria-expanded="false">☰ Menu</button>
 <nav id="nav"><a href="#inicio">Início</a><a href="#igreja">Nossa igreja</a><a href="#lideranca">Liderança</a><a href="#cultos">Cultos</a><a href="#ofertas">Dízimos e ofertas</a><a href="#contato">Contato</a></nav>
 </div></header>
 <main>
-<section class="hero" id="inicio"><div class="wrap hero-grid"><div><div class="eyebrow">Seja bem-vindo(a)</div><h1>Um lugar para fortalecer sua fé e sua família.</h1><p>A Igreja Evangélica Assembleia de Deus Torre Forte recebe você com alegria para momentos de louvor, oração, aprendizado da Palavra e comunhão cristã.</p><div class="buttons"><a class="btn goldbtn" href="#cultos">Confira os cultos</a><a class="btn lightbtn" href="https://wa.me/5585988099844" target="_blank" rel="noopener">Fale pelo WhatsApp</a>
+<section class="hero hero-photo" id="inicio"><div class="hero-shade" aria-hidden="true"></div><div class="wrap hero-grid"><div><div class="eyebrow">Seja bem-vindo(a)</div><h1>Um lugar para fortalecer sua fé e sua família.</h1><p>A Igreja Evangélica Assembleia de Deus Torre Forte recebe você com alegria para momentos de louvor, oração, aprendizado da Palavra e comunhão cristã.</p><div class="buttons"><a class="btn goldbtn" href="#cultos">Confira os cultos</a><a class="btn lightbtn" href="https://wa.me/5585988099844" target="_blank" rel="noopener">Fale pelo WhatsApp</a>
 <a class="btn goldbtn" href="https://operadorbrasil7233.github.io/Igreja-radio00/" target="_blank" rel="noopener">📻 Rádio Igreja</a>
-<a class="btn lightbtn" href="https://www.facebook.com/share/151RLyVHVjf/" target="_blank" rel="noopener">f Facebook</a></div></div><img class="hero-logo" src="file_0000000056f4820eaee04b97c6672dca.png" alt="Emblema da Assembleia de Deus Torre Forte"></div></section>
+<a class="btn lightbtn" href="https://www.facebook.com/share/151RLyVHVjf/" target="_blank" rel="noopener">f Facebook</a></div></div></div></section>
 <section id="igreja"><div class="wrap about"><div><div class="eyebrow">Nossa igreja</div><h2>Uma igreja de portas abertas para você.</h2><p>Somos uma comunidade cristã dedicada a anunciar a Palavra de Deus, cultivar a comunhão e servir às pessoas com amor.</p><p>Venha participar de um culto e conhecer nossa comunidade. Você e sua família são bem-vindos!</p><a class="btn bluebtn" href="#contato">Planeje sua visita</a></div><img class="pastors" src="assets/pastoras-aurilene-eliane.jpg" alt="Pastoras presidentes Pra. Aurilene e Eliane Galvão"></div></section>
 <section class="pale" id="lideranca"><div class="wrap"><div class="heading"><div class="eyebrow">Liderança da igreja</div><h2>Pastoras presidentes</h2><p>Com carinho e dedicação no trabalho cristão.</p></div><div class="about"><img class="pastors" src="assets/pastoras-aurilene-eliane.jpg" alt="Pra. Aurilene e Eliane Galvão"><div><h2>Pra. Aurilene e Eliane Galvão</h2><p>Seja bem-vindo à Assembleia de Deus Torre Forte. Estamos felizes em receber você e sua família em nossa igreja.</p><p class="note">Os nomes e cargos foram inseridos conforme as informações fornecidas. Confira a grafia e os cargos antes de divulgar.</p></div></div></div></section>
 <section id="cultos"><div class="wrap"><div class="heading"><div class="eyebrow">Participe conosco</div><h2>Dias e horários dos cultos</h2><p>Esperamos você para momentos de louvor, oração e comunhão.</p></div>
@@ -72,7 +110,7 @@ section{padding:70px 0}.heading{text-align:center;max-width:720px;margin:0 auto 
     <div class="count-unit"><strong id="countSeconds">00</strong><span>Segundos</span></div>
   </div>
 </div>
-<p class="note"></p></div></section>
+<p class="note">Programação transcrita do cartaz enviado. Confirme se todos os dias continuam válidos.</p></div></section>
 <section class="pale"><div class="wrap"><div class="heading"><div class="eyebrow">Nossa missão</div><h2>Fé que acolhe. Amor que transforma.</h2><p>Um espaço para adorar a Deus, aprender a Palavra e viver a comunhão cristã.</p></div><div class="cards">
 <div class="card"><div class="symbol">✝</div><h3>Palavra de Deus</h3><p>Ensinamento bíblico para fortalecer a fé.</p></div><div class="card"><div class="symbol">♡</div><h3>Comunhão</h3><p>Uma comunidade para acolher e apoiar.</p></div><div class="card"><div class="symbol">🙏</div><h3>Oração</h3><p>Momentos de oração e esperança.</p></div><div class="card"><div class="symbol">📖</div><h3>Doutrina</h3><p>Aprendizado e crescimento espiritual.</p></div>
 </div></div></section>
